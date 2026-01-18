@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contenido: html desde 001">
+    <meta name="autor" content="David">
+    
+     <!-- ESTILOS PARA LOS ICONOS DE LISTAS -->
+<style>
+ /* Estilo para listas con círculos */
+        .lista-circulos {
+            list-style-type: circle;
+        }
+        
+        /* Estilo para listas con cuadrados */
+        .lista-cuadrados {
+            list-style-type: square;
+        }
+        
+        /* Estilo para listas con números romanos */
+        .lista-romanos {
+            list-style-type: lower-roman;
+        }
+        
+        /* Estilo para listas con letras */
+        .lista-letras {
+            list-style-type: lower-alpha;
+        }
+        
+        /* Estilo para lista sin viñetas */
+        .lista-sin-punto {
+            list-style-type: none;
+        }
+        
+        /* Un poco de estilo para que se vea mejor */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+        
+        .seccion-listas {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
+    <title>Practica listas</title>
+</head>
+<body>
+    <!-- TITULO DEL CUERPO-->
+    <h1> "LISTAS" </h1>
+
+    <!--ETIQUETAS DE TEXTO-->
+    <p>En esta página veremos diferentes tipos de listas con sus respectivos estilos de iconos.</p>
+    <p><strong>Objetivo:</strong> Aprender a usar listas ordenadas y no ordenadas con diferentes marcadores.</p>
+    <hr>
+    
+    <!--Seccion 1: listas no numeradas-->
+    <div class="seccion-listas">
+        <h2>O listas no ordenadas (con viñetas) </h2>
+
+        <h3> lista con circulos (list-style-type: circle) </h3>
+        <ul class="lista-circulos">
+            <li>Manzanas</li>
+            <li>naranjas</li>
+            <li>platanos</li>
+            <li>uvas</li>
+        </ul>
+
+        <h3>⬛ Lista con Cuadrados (list-style-type: square)</h3>
+        <ul class="lista-cuadrados">
+            <li>Leche</li>
+            <li>Pan</li>
+            <li>Huevos</li>
+            <li>Queso</li>
+        </ul>
+        
+        <h3>• Lista con Círculos Rellenos (default: disc)</h3>
+        <ul>
+            <li>Café</li>
+            <li>Té</li>
+            <li>Agua</li>
+            <li>Jugo</li>
+        </ul>
+    </div>
+    <!-- SECCIÓN 2: LISTAS NUMERADAS -->
+    <div class="seccion-listas">
+        <h2>🔢 Listas Ordenadas (Numeradas)</h2>
+        
+        <h3>1. Lista con Números (default: decimal)</h3>
+        <ol>
+            <li>Despertarse</li>
+            <li>Lavarse los dientes</li>
+            <li>Desayunar</li>
+            <li>Ir al trabajo/estudio</li>
+        </ol>
+        
+        <h3>i. Lista con Números Romanos (lower-roman)</h3>
+        <ol class="lista-romanos">
+            <li>Introducción a HTML</li>
+            <li>Etiquetas básicas</li>
+            <li>Listas y tablas</li>
+            <li>Formularios</li>
+        </ol>
+        
+        <h3>a. Lista con Letras (lower-alpha)</h3>
+        <ol class="lista-letras">
+            <li>Primer paso</li>
+            <li>Segundo paso</li>
+            <li>Tercer paso</li>
+            <li>Cuarto paso</li>
+        </ol>
+    </div>
+    <!-- SECCIÓN 3: LISTA CON TEMÁTICA PROPIA -->
+    <div class="seccion-listas">
+        <h2>🎮 Mi Temática Favorita: Videojuegos</h2>
+        
+        <h3>🎯 Géneros de Videojuegos (con círculos)</h3>
+        <ul class="lista-circulos">
+            <li><strong>Acción:</strong> Call of Duty, Doom</li>
+            <li><strong>Aventura:</strong> The Legend of Zelda, Tomb Raider</li>
+            <li><strong>RPG:</strong> Final Fantasy, Skyrim</li>
+            <li><strong>Estrategia:</strong> Age of Empires, StarCraft</li>
+        </ul>
+        
+        <h3>🏆 Mis Juegos Favoritos (numerados)</h3>
+        <ol>
+            <li>The Legend of Zelda: Breath of the Wild</li>
+            <li>Red Dead Redemption 2</li>
+            <li>God of War (2018)</li>
+            <li>Portal 2</li>
+        </ol>
+        
+        <h3>📅 Orden para jugar una nueva saga (con letras)</h3>
+        <ol class="lista-letras">
+            <li>Investigar la historia</li>
+            <li>Ver gameplays</li>
+            <li>Comenzar por el primer juego</li>
+            <li>Tomar notas de la trama</li>
+        </ol>
+    </div>
+    <!-- SECCIÓN 4: LISTA SIN PUNTOS (para menús) -->
+    <div class="seccion-listas">
+        <h2>🌐 Navegación (Lista sin puntos)</h2>
+        <ul class="lista-sin-punto">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+        </ul>
+        
+        <p><em>Esta lista usa <code>list-style-type: none</code> para eliminar los puntos, ideal para menús de navegación.</em></p>
+    </div>
+    <!-- EXPLICACIÓN -->
+    <hr>
+    <h2>📝 Explicación de los Estilos Usados</h2> <!-- se pueden meter iconos dentro <sin problemas>-->
+    <ul class="lista-cuadrados">
+        <li><code>circle</code> → Círculos vacíos</li>
+        <li><code>square</code> → Cuadrados rellenos</li>
+        <li><code>disc</code> → Círculos rellenos (por defecto en &lt;ul&gt;)</li>
+        <li><code>decimal</code> → Números (1,2,3) - por defecto en &lt;ol&gt;</li>
+        <li><code>lower-roman</code> → Números romanos en minúscula (i, ii, iii)</li>
+        <li><code>lower-alpha</code> → Letras minúsculas (a, b, c)</li>
+        <li><code>none</code> → Sin viñeta/número</li>
+    </ul>
+
+    <!-- ENLACE A PÁGINA EXTERNA -->
+<div class="enlace-externo">
+        <h3>🌐 Recursos Externos para Aprender Más</h3>
+        <p>Para más información sobre estilos de listas en HTML y CSS, visita:</p>
+        <ul class="lista-sin-punto">
+            <li>📚 <a href="https://www.w3schools.com/html/html_lists.asp" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    title="Tutorial completo sobre listas en HTML">
+                W3Schools: HTML Lists Tutorial
+            </a> - Guía completa sobre listas HTML</li>
+        </ul>
+        <p><small>Este enlace se abrirá en una nueva pestaña debido al atributo <code>target="_blank"</code></small></p>
+    </div>
+    <p><strong>Consejo:</strong> Puedes cambiar la temática fácilmente modificando los textos dentro de los &lt;li&gt;.</p>
+</body>
+</html>

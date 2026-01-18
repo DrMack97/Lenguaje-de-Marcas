@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contenido: html desde 000">
+    <meta name="autor" content="David">
+    <!-- <meta http-equiv="refresh" content="5;url=https://www.ejemplo.com"> 
+     (se usa para redirigir a otro url el "5" son los segundos de permanencia) -->
+    <title>mi primera pagina web</title>
+</head>
+<!-- esto es un comentario!-->
+<body>
+    <h1> *: MI PRIMERA PAGINA GUEVS :* </h1>
+    // logo google
+    <a href="https://www.google.com" target="_blank">
+        <!-- todas las imagenes(img) deben terminar en .png .jpg -->
+        <img src="https://www.nicepng.com/png/detail/2-28004_images-branding-googlelogo-2x-googlelogo-color-272x92dp-custom.png"
+            alt="logo de google">
+    </a>
+    // logo de html
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+        <img src="https://www.nicepng.com/png/detail/70-702627_html-logo-vector-png.png"
+            alt="logo de html">
+    </a>
+    // logo de CSS 
+    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+        <img src="https://www.nicepng.com/png/detail/141-1416215_1-693-38-css-sticker-css-sticker.png"
+            alt="logo de CSS">
+    </a>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contenido: html desde 001">
+    <meta name="autor" content="David">
+    
+     <!-- ESTILOS PARA LOS ICONOS DE LISTAS -->
+<style>
+ /* Estilo para listas con círculos */
+        .lista-circulos {
+            list-style-type: circle;
+        }
+        
+        /* Estilo para listas con cuadrados */
+        .lista-cuadrados {
+            list-style-type: square;
+        }
+        
+        /* Estilo para listas con números romanos */
+        .lista-romanos {
+            list-style-type: lower-roman;
+        }
+        
+        /* Estilo para listas con letras */
+        .lista-letras {
+            list-style-type: lower-alpha;
+        }
+        
+        /* Estilo para lista sin viñetas */
+        .lista-sin-punto {
+            list-style-type: none;
+        }
+        
+        /* Un poco de estilo para que se vea mejor */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+        
+        .seccion-listas {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
+    <title>Practica listas</title>
+</head>
+<body>
+    <!-- TITULO DEL CUERPO-->
+    <h1> "LISTAS" </h1>
+
+    <!--ETIQUETAS DE TEXTO-->
+    <p>En esta página veremos diferentes tipos de listas con sus respectivos estilos de iconos.</p>
+    <p><strong>Objetivo:</strong> Aprender a usar listas ordenadas y no ordenadas con diferentes marcadores.</p>
+    <hr>
+    
+    <!--Seccion 1: listas no numeradas-->
+    <div class="seccion-listas">
+        <h2>O listas no ordenadas (con viñetas) </h2>
+
+        <h3> lista con circulos (list-style-type: circle) </h3>
+        <ul class="lista-circulos">
+            <li>Manzanas</li>
+            <li>naranjas</li>
+            <li>platanos</li>
+            <li>uvas</li>
+        </ul>
+
+        <h3>⬛ Lista con Cuadrados (list-style-type: square)</h3>
+        <ul class="lista-cuadrados">
+            <li>Leche</li>
+            <li>Pan</li>
+            <li>Huevos</li>
+            <li>Queso</li>
+        </ul>
+        
+        <h3>• Lista con Círculos Rellenos (default: disc)</h3>
+        <ul>
+            <li>Café</li>
+            <li>Té</li>
+            <li>Agua</li>
+            <li>Jugo</li>
+        </ul>
+    </div>
+    <!-- SECCIÓN 2: LISTAS NUMERADAS -->
+    <div class="seccion-listas">
+        <h2>🔢 Listas Ordenadas (Numeradas)</h2>
+        
+        <h3>1. Lista con Números (default: decimal)</h3>
+        <ol>
+            <li>Despertarse</li>
+            <li>Lavarse los dientes</li>
+            <li>Desayunar</li>
+            <li>Ir al trabajo/estudio</li>
+        </ol>
+        
+        <h3>i. Lista con Números Romanos (lower-roman)</h3>
+        <ol class="lista-romanos">
+            <li>Introducción a HTML</li>
+            <li>Etiquetas básicas</li>
+            <li>Listas y tablas</li>
+            <li>Formularios</li>
+        </ol>
+        
+        <h3>a. Lista con Letras (lower-alpha)</h3>
+        <ol class="lista-letras">
+            <li>Primer paso</li>
+            <li>Segundo paso</li>
+            <li>Tercer paso</li>
+            <li>Cuarto paso</li>
+        </ol>
+    </div>
+    <!-- SECCIÓN 3: LISTA CON TEMÁTICA PROPIA -->
+    <div class="seccion-listas">
+        <h2>🎮 Mi Temática Favorita: Videojuegos</h2>
+        
+        <h3>🎯 Géneros de Videojuegos (con círculos)</h3>
+        <ul class="lista-circulos">
+            <li><strong>Acción:</strong> Call of Duty, Doom</li>
+            <li><strong>Aventura:</strong> The Legend of Zelda, Tomb Raider</li>
+            <li><strong>RPG:</strong> Final Fantasy, Skyrim</li>
+            <li><strong>Estrategia:</strong> Age of Empires, StarCraft</li>
+        </ul>
+        
+        <h3>🏆 Mis Juegos Favoritos (numerados)</h3>
+        <ol>
+            <li>The Legend of Zelda: Breath of the Wild</li>
+            <li>Red Dead Redemption 2</li>
+            <li>God of War (2018)</li>
+            <li>Portal 2</li>
+        </ol>
+        
+        <h3>📅 Orden para jugar una nueva saga (con letras)</h3>
+        <ol class="lista-letras">
+            <li>Investigar la historia</li>
+            <li>Ver gameplays</li>
+            <li>Comenzar por el primer juego</li>
+            <li>Tomar notas de la trama</li>
+        </ol>
+    </div>
+    <!-- SECCIÓN 4: LISTA SIN PUNTOS (para menús) -->
+    <div class="seccion-listas">
+        <h2>🌐 Navegación (Lista sin puntos)</h2>
+        <ul class="lista-sin-punto">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+        </ul>
+        
+        <p><em>Esta lista usa <code>list-style-type: none</code> para eliminar los puntos, ideal para menús de navegación.</em></p>
+    </div>
+    <!-- EXPLICACIÓN -->
+    <hr>
+    <h2>📝 Explicación de los Estilos Usados</h2> <!-- se pueden meter iconos dentro <sin problemas>-->
+    <ul class="lista-cuadrados">
+        <li><code>circle</code> → Círculos vacíos</li>
+        <li><code>square</code> → Cuadrados rellenos</li>
+        <li><code>disc</code> → Círculos rellenos (por defecto en &lt;ul&gt;)</li>
+        <li><code>decimal</code> → Números (1,2,3) - por defecto en &lt;ol&gt;</li>
+        <li><code>lower-roman</code> → Números romanos en minúscula (i, ii, iii)</li>
+        <li><code>lower-alpha</code> → Letras minúsculas (a, b, c)</li>
+        <li><code>none</code> → Sin viñeta/número</li>
+    </ul>
+
+    <!-- ENLACE A PÁGINA EXTERNA -->
+<div class="enlace-externo">
+        <h3>🌐 Recursos Externos para Aprender Más</h3>
+        <p>Para más información sobre estilos de listas en HTML y CSS, visita:</p>
+        <ul class="lista-sin-punto">
+            <li>📚 <a href="https://www.w3schools.com/html/html_lists.asp" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    title="Tutorial completo sobre listas en HTML">
+                W3Schools: HTML Lists Tutorial
+            </a> - Guía completa sobre listas HTML</li>
+        </ul>
+        <p><small>Este enlace se abrirá en una nueva pestaña debido al atributo <code>target="_blank"</code></small></p>
+    </div>
+    <p><strong>Consejo:</strong> Puedes cambiar la temática fácilmente modificando los textos dentro de los &lt;li&gt;.</p>
+    <!-- listas anidadas-->
+    <p>lista anidada 1</p>
+    <ul>
+        <li>
+            Item 1
+            <ol type="1">
+                <li>
+                    Item 1 de sublista
+                    <ul>
+                        <li>Item 1 de sub-sublista</li>
+                        <li>Item 2 de sub-sublista</li>
+                    </ul>
+                </li>
+                <li>
+                    Item 2 de sublista
+                    <ol type="1">
+                        <li>Item 1 de sub-sublista</li>
+                        <li>Item 2 de sub-sublista</li>
+                    </ol>
+                </li>
+                <li>Item 3 de sublista</li>
+                <li>Item 4 de sublista</li>
+            </ol>
+        </li>
+        <li>
+            Item 2
+            <ul>
+                <li>Item 1 de sublista</li>
+                <li>Item 2 de sublista</li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <p>lista anidada 2</p>
+        <ol type="1">
+        <li>
+            Ítem 1
+            <ol type="1">
+                <li>
+                    Ítem 1 de sublista
+                    <ol type="1">
+                        <li>Ítem 1 de sub-sublista</li>
+                        <li>Ítem 2 de sub-sublista</li>
+                    </ol>
+                </li>
+                <li>
+                    Ítem 2 de sublista
+                    <ol type="1">
+                        <li>Ítem 1 de sub-sublista</li>
+                        <li>Ítem 2 de sub-sublista</li>
+                    </ol>
+                </li>
+                <li>Ítem 3 de sublista</li>
+                <li>Ítem 4 de sublista</li>
+            </ol>
+        </li>
+        <li>
+            Ítem 2
+            <ol type="1">
+                <li>Ítem 1 de sublista</li>
+                <li>Ítem 2 de sublista</li>
+            </ol>
+        </li>
+    </ol>
+    <br>
+    <p> lista definicion: </p>
+<dl>
+        <dt><strong>software</strong></dt>
+        <dd>Conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora.</dd>
+        
+        <dt><strong>libre</strong></dt>
+        <dd>Que tiene facultad para obrar o no obrar.</dd>
+        <dd>Que no es esclavo.</dd>
+        <dd>Que no está preso.</dd>
+        <dd>Licencioso,</dd>
+    </dl>
+    <!--enlaces  -->
+    <div style="margin: 1rem;">
+        <h1 style="margin: 0; padding: 0; font-size: 2rem; font-weight: bold;">
+            <a href="https://es.wikipedia.org/wiki/Platero_y_yo" 
+            style="color: inherit; text-decoration: none;">
+                Platero y yo
+            </a>
+        </h1>
+        
+        <p style="margin-top: 1rem; line-height: 1.5;">
+            Platero es pequeño, peludo, suave; tan blando por fuera, que se diría todo de 
+            <a href="https://es.wikipedia.org/wiki/Algodón" 
+            style="color: black; text-decoration: underline;">
+                algodón,</a> 
+            que no lleva huesos. Sólo los espejos de
+            <a href="https://es.wikipedia.org/wiki/Azabache" 
+            style="color: black; text-decoration: underline;">
+                azabache</a> 
+            de sus ojos son duros cual dos escarabajos de 
+            <a href="https://es.wikipedia.org/wiki/Cristal" 
+            style="color:black; text-decoration: underline;">
+                cristal</a>
+            negro.
+        </p>
+    </div>
+    <br>
+    <img 
+    src="https://cdn.britannica.com/66/240466-050-BA964358/Two-kangaroos-boxing.jpg" 
+    alt="Cangur" 
+    title="Two kangaroos boxing"
+    style="width: 100%;"/>
+    <br><br><br>
+    <figure style="margin: 0; padding: 0;">
+    <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/1/18/Vombatus_ursinus_-Maria_Island_National_Park.jpg" 
+        alt="Wombat" 
+        title="Common wombat"
+        style="width: 100%;"
+    />
+    <br>
+    <figcaption style="text-align: center; font-style: italic; margin-top: 8px; font-size: 0.9rem;">
+        Wombats are short-legged, muscular quadrupedal marsupials that are native to Australia.
+    </figcaption>
+</figure>
+<br>
+    <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial; text-align: center;">Platero y Yo</h2>
+
+    <h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif;margin-top: 1.5rem; font-weight: lighter;">Capítulos</h3>
+    <ol style="margin-left: 1.5rem; opacity: 0.7;">
+        <li><a href="#prologuillo" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: black;font-weight: bolder; text-decoration: underline;">Prologuillo</a></li>
+        <li><a href="#platero" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:black;font-weight: bolder; text-decoration: underline;">Platero</a></li>
+        <li><a href="#mariposas" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:black;font-weight: bolder; text-decoration: underline;">Mariposas blancas</a></li>
+        <li><a href="#juegos" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:black;font-weight: bolder; text-decoration: underline;">Juegos del anochecer</a></li>
+    </ol>
+
+    <h3 id="prologuillo" style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: lighter;margin-top: 2rem;">Prologuillo</h3>
+
+    <p style="opacity: 0.9;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: small; margin-top: 1rem; line-height: 1.5;">Suele creerse que yo escribí Platero y yo para los niños, que es un libro para niños.</p>
+    <p style="opacity: 0.9;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: small;margin-top: 1rem; line-height: 1.5;">No. En 1913, "La Lectura", que sabía que yo estaba con ese libro, me pidió que adelantase un conjunto de sus páginas más idílicas para su "Biblioteca Juventud" Entonces, alterando la idea momentáneamente, escribí este prólogo:</p>
+
+    <h3 id="platero" style="margin-top: 2rem;font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: lighter;">Platero</h3>
+
+    <p style="opacity: 0.9;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: small;margin-top: 1rem; line-height: 1.5;">Platero es pequeño, peludo, suave; tan blando por fuera, que se diría todo de algodón, que no lleva huesos. Sólo los espejos de azabache de sus ojos son duros cual dos escarabajos de cristal negro.</p>
+
+    <p style="opacity: 0.9;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: small;margin-top: 1rem; line-height: 1.5;">Lo dejo suelto, y se va al prado, y acaricia tibiamente con su hocico, rozándolas apenas, las florecillas rosas, celestes y gualdas.... Lo llamo dulcemente: "¿Platero?", y viene a mí con un trotecillo alegre que parece que se ríe, en no sé qué cascabeleo ideal....</p>
+
+    <h3 id="mariposas" style="margin-top: 2rem; font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: lighter;;">Mariposas blancas</h3>
+    <p style="opacity: 0.9;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: small;margin-top: 1rem; line-height: 1.5;">La noche cae, brumosa ya y morada. Vagas claridades malvas y verdes perduran tras la torre de la iglesia. El camino sube, lleno de sombras, de cansancio y de anhelo. De pronto, un hombre oscuro, con una gorra y un pincho, roja un instante la cara fea por la luz del cigarro, baja a nosotros de una casucha miserable, perdida entre sacas de carbón. Platero se amedrenta.</p>
+
+    <h3 id="juegos" style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: lighter;margin-top: 2rem; margin-top: 2rem;">Juegos del anochecer</h3>
+
+    <p style="opacity: 0.9;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: small;margin-top: 1rem; line-height: 1.5;">Cuando, en el crepúsculo del pueblo, Platero y yo entramos, por la oscuridad morada de la calleja miserable que da al río seco, los niños pobres juegan a asustarse, fingiéndose mendigos.</p>
+    
+    <br>
+    <h1 style="text-align:center;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 900;">Citutat Vella</h1>
+    <img
+    src="https://xtec.dev/web/document/link/pont-bisbe.jpg"
+    style="width: 45%;"
+    alt="Ciudad"
+    title="Ciudad vella">
+    <p style="font-size:small;font-family:Arial;text-align: center;">
+    <span style="font-weight: bold;"> Pont del Bisbe</span>
+    <span style="opacity: 0.6;">.Pont de marbre que uneix dos edificis al barri gòtic.</span> </p>
+    <h2 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">Museus</h2>
+    <ul>
+        <li style="font-size: small;font-family:Arial;color: rgb(119, 113, 113);"> <a href="https://xtec.dev/web/museus/muhba.html" style="font-family:sans-serif ;font-weight: 500;text-decoration: underline;color: black;"> MUHBA</a>. Museu d’Història de Barcelona MUHBA </li>
+        <li style="font-size: small;font-family:Arial;color: rgb(119, 113, 113);"> <a href="https://xtec.dev/web/museus/picasso.html" style="font-family:sans-serif ;font-weight: 500;text-decoration: underline;color: black;"> Picasso</a>. Museu d’Història de Barcelona MUHBA </li>
+    </ul>
+    <!-- practicas uso de STYLE-->
+     <h2><strong>Basic Chemistry</strong></h2>
+    <p>si tenim <span style="color: red;">50 moleculas</span> de H<sup>2</sup>O poster no tenim res.</p>
+    <p><span style="text-decoration: underline;">Si fos</span> H<sub>2</sub>O potser tidriem quelcom. </p>
+    <br>
+
+    <h2 style="text-transform: capitalize; color: #991b1b;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">
+    <strong> Extractos de capítulos de la primera parte </strong>
+</h2>
+<p style="opacity: 0.7; font-style: italic; text-align: center;">
+    Extracto de los capítulos que contiene esta famosa historia del valeroso caballero don Quijote de la Mancha
+</p>
+
+<h2 style="font-size:larger;text-align: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    Capítulo I
+</h2>
+<p style="opacity: 0.5; font-style: italic; text-align: center;">
+    Que trata de la condición y ejercicio del famoso y valiente hidalgo don Quijote de la Mancha
+</p>
+<p style="opacity: 0.85; line-height: 1.25rem;">
+    En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, 
+    adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, 
+    algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con 
+    sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino.
+</p>
+<h2 style="text-decoration: underline; text-align: center;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(7, 7, 158);"> <strong> Tosa de Mar </strong> </h2>
+</h2>
+
+<p style="line-height: 1.25rem; color: #f97316;">
+    De jovenets, coneixíem la costa de garbí pam a pam.
+    De Calella a Tossa hi anàvem de qualsevol manera, amb un bot de vint pams,
+    un tros de drap per vela, un fogó, una manta, una tenda i uns volantins per fer peix per anar menjant. Passat Sant Feliu, la costa s'eleva i fins a Tossa té una grandesa impressionant. 
+    En aquella època era encara tota plena de pins que feien una olor aspra i puixant. Ara n'han tallat molts, han acabat la cinta de la carretera i la costa sembla un animal pelat i estrany que fuig arrossegant una corda que li han lligat al coll… A l'ombra dels pins perfumats de la cala de Pola hi hem menjat moltes paellades de peix fresquíssim acabat d'agafar, 
+    i a Giberola hem fet arrossos d'una importància sensacional.
+</p>
+
+<p style="line-height: 2.5rem; color: #9a3412;">
+    L'arròs de peix es feia molt bo, en el meu temps, a la Costa Brava. 
+    La llagosta, la gamba i el calamars, fan l'arròs fort, però una mica moll. 
+    El millor peix per fer arròs és el congre, els sublimes congrets verdosos, 
+    de carn dura i fina dels reclaus de Giberola. El sofregit de l'arròs era un paradís 
+    terrenal. Hi posàvem el marisc corresponent — el musclo, el cabrot, 
+    la pallarida — i el trinxadet d'all i de ceba amb el tomàquet tan dolç. Els perfums del sofregit, barrejats amb l'aspror dels pins i amb la salabror del mar ens feien mirar el món amb ulls enlluernats. 
+    L'arròs, posat sobre aquesta base, sortia sòlid, aeri i perfumat.
+</p>
+<br>
+<p style="text-align: center; font-size: 0.875rem; font-weight: 900;">Topant de cap en una i altra soca,</p>
+<p style="opacity: 0.8; text-align: center; font-size: 1.rem; font-weight: 700;">avançant d'esma pel camí de l'aigua,</p>
+<p style="opacity: 0.8; text-align: center; font-size: 1.125rem; font-weight: 600;">se'n ve la vaca tota sola. És cega.</p>
+<br>
+<p style="font-family:Arial, Helvetica, sans-serif;opacity:  0.8; text-align: center; font-size: 1.5rem; font-weight: 400;">D'un cop de roc llançat amb massa traça,</p>
+<p style="font-family: Arial, sans-serif;font-weight: lighter;opacity: 0.6; text-align: center; font-size: 1.80rem;">el vailet va buidar-li un ull, i en l'altre</p>
+
+<p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;opacity: 0.7; text-align: center; font-size: 2.25rem; font-weight: lighter;">se li ha posat un tel: la vaca és cega.</p>
+<br>
+
+<h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;font-size: 1.5rem; text-align: right; color: #5b21b6;">
+    A un avariento
+</h1>
+
+<p style="font-family: sans-serif;font-size:small;text-align: left; color: #ca8a04; line-height: 1.45;">
+    En aqueste enterramiento <br/>
+    humilde, pobre y mezquino,<br/>
+    yace envuelto en oro fino <br/>
+    un hombre rico avariento.
+</p>
+
+<p style="font-family: sans-serif;text-align: center; line-height: 3.80rem; color: #7c3aed;">
+    Murió con cien mil dolores <br/>
+    sin poderlo remediar,<br/>
+    tan sólo por no gastar<br/>
+    ni aun gasta malos humores.
+</p>
+
+<p style="font-family: monospace; text-align: right; font-style: italic; font-weight:100 ; color: #be185d;">
+    Francisco de Quevedo
+</p>
+<br>
+<h2><strong style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Aigua pesant</strong></h2>
+<br>
+<p style="font-family:sans-serif;font-size: small;">L'<strong>aigua pesant</strong>és aigua 
+    (H<sub>2</sub>O) en la qual els àtoms d’hidrogen <span style="text-decoration: underline;">han estat substituïts pel deuteri (D).</span></p>
+<p style="font-family:sans-serif;font-size: small;">La seva fórmula química és doncs D<sub>2</sub>O.</p>
+<ul>
+    <li style="font-family:sans-serif;font-size: small;"><strong>Fórmula:</strong> D<sub>2</sub>O</li>
+    <li style="font-family:sans-serif;font-size: small;"><strong>Densitat:</strong> 1,11 g/cm<sup>3</sup></li>
+    <li style="font-family:sans-serif;font-size: small;"><strong>Massa molar: </strong>20,0276 g/mol</li>
+</ul>
+<br>
+<h2 style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">
+    Canelons a la catalana o de Sant Esteve
+</h2>
+
+<p style="font-family:Verdana, Geneva, Tahoma; font-size: small;">
+    Com fer canelons a la catalana o de Sant Esteve pas a pas</p>
+
+<ol style="font-family:Verdana, Geneva, Tahoma;font-size: small;
+    list-style-type:decimal;
+    padding-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+">
+    <li style="font-family:Verdana, Geneva, Tahoma; font-size: small;margin-bottom: 10px;">
+        Agafem un bol i fiquem els diferents tipus de carn. Amb l'ajuda d'una forquilla aixafem i barregem totes les carns fins a obtenir una barreja més o menys homogènia.
+    </li>
+    <li style="font-family:Verdana, Geneva, Tahoma;font-size:small;margin-bottom: 10px;">
+        En una fusta pelem i tallem la ceba al estil Brunoise.
+    </li>
+    <li style="font-family:Verdana, Geneva, Tahoma;font-size:small;margin-bottom: 10px;">
+        En una paella afegim una mica d'oli d'oliva i deixem escalfar a foc mig fins que l'oli estigui ben calent.
+    </li>
+    <li style="font-family:Verdana, Geneva, Tahoma;font-size:small;margin-bottom: 10px;">
+        Afegim la ceba i deixem cuinar uns 2-3 minuts a foc mig.
+    </li>
+    <li style="font-family:Verdana, Geneva, Tahoma;font-size: small;margin-bottom: 10px;">
+        Seguidament afegim la barreja de carns de vedella ...
+    </li>
+</ol>
+<br>
+<h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:larger; text-align: center;">
+    Com es fa un vaixell de paper?
+</h2>
+
+<p style="font-family: Verdana, Geneva, Tahoma;font-size:small; text-align: center; text-decoration: underline; color: #22be49; font-weight: bold;">
+    Material que necessitem:
+</p>
+
+<ul style="font-family: Verdana, Geneva, Tahoma; font-size:small;line-height: 2.05rem; color: #07b340; text-align: center; padding-left: 0;">
+    <li>1 cartolina mida DIN A4</li>
+    <li>1 llapis</li>
+    <li>Goma</li>
+</ul>
+
+<p style="font-family: Verdana, Geneva, Tahoma;text-align: center;font-size:95%; text-decoration: underline; color: #991b1b; font-weight: bold;">
+    Pasos a seguir per fer el vaixell
+</p>
+
+<ol style="color: #991b1b; text-align: center;line-height: 2.1rem; padding-left: 0;">
+    <li>Dobleguem la cartolina per la meitat</li>
+    <li>Baixem els dos extrems superiors i els unim al centre</li>
+    <li>Pugem l'extrem inferior formant un rectangle i tocant els dos extrems superiors</li>
+    <li>Dobleguem les puntes d'aquest rectangle cap al costat contrari</li>
+</ol>
+<br>
+<p> <span style="opacity: 0.9; font-family: Verdana, Geneva, Tahoma; font-size:smaller;"> El</span> 
+    <span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: smaller; font-weight: bolder; 
+    color: #f87000;">Premi Turing</span> 
+    <span style="opacity: 0.9; font-family: Verdana, Geneva, Tahoma; font-size:smaller;">
+    és considerat per molts com el
+    <span style="text-decoration: underline;">Premi Nobel de la Informàtica.</span>
+</p>
+
+<h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.4rem;">Guardonats</h2>
+<!--font-family: sans-serif;font-size:small;-->
+<table style="
+        width: 150%;
+        border-collapse: collapse;
+        margin: 24px 0;
+        font-size: 0.95rem;
+    ">
+        <thead>
+            <tr>
+                <th style="
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: smaller;
+                    text-align: left;
+                    padding: 12px 16px;
+                    font-weight: 600;
+                    color: #000000;
+                    border-bottom: 1px solid #eaecef;
+                ">Any</th>
+                <th style="
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: smaller;
+                    text-align: left;
+                    padding: 12px 16px;
+                    font-weight: 600;
+                    color: #000000;
+                    border-bottom: 1px solid #eaecef;
+                ">Nom</th>
+                <th style="
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: smaller;
+                    text-align: left;
+                    padding: 12px 16px;
+                    font-weight: 600;
+                    color: #000000;
+                    border-bottom: 1px solid #eaecef;
+                ">Motiu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="
+                    padding: 12px 16px; font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    font-weight: 400;
+                    color: #586069;
+                    width: 80px;
+                ">1966</td>
+                <!--nombre -->
+                <td style="
+                    padding: 12px 16px; font-family: Verdana, Geneva, Tahoma; 
+                    font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    font-weight: bolder;
+                    color: #0366d6;
+                    width: 80px;
+                ">Alan Perlis</td>
+                <td style="font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    padding: 12px 16px;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    text-align: justify;
+                ">
+                    Per la seva influència en les àrees de tècniques de programació avançades i construcció de compiladors.
+                </td>
+            </tr>
+            <tr>
+                <td style="font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    padding: 12px 16px;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    font-weight: 400;
+                    color: #586069;
+                    width: 80px;
+                ">1967</td>
+                <!-- nombre -->
+                <td style="
+                    padding: 12px 16px; font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    font-weight: bolder;
+                    color: #0366d6;
+                    width: 80px;
+                ">Maurice V. Wilkes</td>
+                <td style="
+                    padding: 12px 16px;font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    text-align: justify;
+                ">
+                    Pel disseny i construcció d'EDSAC, el primer ordinador de programa emmagatzemament en memòria interna.
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 12px 16px; font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    font-weight: 400;
+                    color: #586069;
+                    width: 80px;
+                ">1968</td>
+                <!-- nom-->
+                <td style="
+                    padding: 12px 16px; font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    font-weight: bolder;
+                    color: #0366d6;
+                    width: 180px;
+                ">Richard Hamming</td>
+                <td style="
+                    padding: 12px 16px; font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    text-align: justify;
+                ">
+                    Per la seva feina en mètodes numèrics, sistemes de codificació automàtics, i pel desenvolupament de codis de detecció i correcció d'errors.
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 12px 16px; font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    font-weight: 400;
+                    color: #586069;
+                    width: 80px;
+                ">1969</td>
+                <td style="
+                    padding: 12px 16px;font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    font-weight: bolder;
+                    color: #0366d6;
+                    width: 180px;
+                ">Marvin Minsky</td>
+                <td style="
+                    padding: 12px 16px;font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    text-align: justify;
+                ">
+                    Per les seves aportacions a intel·ligència artificial.
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 12px 16px; font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    font-weight: 400;
+                    color: #586069;
+                    width: 80px;
+                ">1970</td>
+                <td style="
+                    padding: 12px 16px; font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    font-weight: bolder;
+                    color: #0366d6;
+                    width: 180px;
+                ">JH Wilkinson</td>
+                <td style="
+                    padding: 12px 16px; font-family: Verdana, Geneva, Tahoma; font-size:smaller;
+                    border-bottom: 1px solid #eaecef;
+                    vertical-align: top;
+                    text-align: justify;
+                ">
+                    Per les seves investigacions en anàlisi numèrica per facilitar l'ús de computadors digitals d'alta velocitat.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+<h1 style="color: #000;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; font-size: 1.5rem;">
+    Clasificaciones 2023 al final de la etapa 9
+</h1>
+
+<p style="text-align:center"> <span style="opacity: 0.7; font-family: Arial, sans-serif;font-family:Arial, Helvetica, sans-serif;font-weight: lighter; ">
+    Distancia total recorrida:</span> <strong style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">686 km</strong>
+</p>
+
+<body style="
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+">
+    <table style="
+        width: 150%;
+        border-collapse: collapse
+    ">
+        <thead style=" border-bottom: 1px solid #e1e4e8;">
+            <tr>
+                <th style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-weight: 400;
+                ">Pos.</th>
+                <th style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-weight: 400;
+                ">N°</th>
+                <th style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    font-weight: 400;
+                    
+                ">Piloto-Equipo</th>
+                <th style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    font-weight: 400;
+                    width: 240px;
+                ">Equipo</th>
+                <th style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-weight: 400;
+                    width: 120px;
+                ">Tiempo</th>
+                <th style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-weight: 400;
+                    width: 120px;
+                ">Diferencia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Fila 1 -->
+            <tr style="border-bottom: 1px solid #eaecef;">
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-weight: 600;
+                    color: #f66a0a;
+                    
+                    width: 60px;
+                ">1</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    
+                    width: 60px;
+                ">77</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    font-weight: bolder;
+                    width: 220px;
+                ">(arg) LUCIANO BENAVIDES</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    width: 240px;
+                ">HUSQVARNA FACTORY RACING</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-family: 'Courier New', monospace;
+                    width: 120px;
+                ">03h 18' 44"</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-family: 'Courier New', monospace;
+                    color: #d73a49;
+                    width: 120px;
+                "></td>
+            </tr>
+            
+            <!-- Fila 2 -->
+            <tr style="border-bottom: 1px solid #eaecef;">
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-weight: 600;
+                    color: #f66a0a;
+                    width: 60px;
+                ">2</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    width: 60px;
+                ">8</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    font-weight: bolder;
+                    width: 220px;
+                ">(aus) TOBY PRICE</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    width: 240px;
+                ">RED BULL KTM FACTORY RACING</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-family: 'Courier New', monospace;
+                    width: 120px;
+                ">03h 19' 46"</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-family: 'Courier New', monospace;
+                    color: #d73a49;
+                    width: 120px;
+                ">+ 00h 01' 02"</td>
+            </tr>
+            
+            <!-- Fila 3 -->
+            <tr style="border-bottom: 1px solid #eaecef;">
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-weight: 600;
+                    color: #f66a0a;
+                    width: 60px;
+                ">3</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    width: 60px;
+                ">10</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    font-weight: bolder;
+                    width: 220px;
+                ">(usa) SKYLER HOWES</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    width: 240px;
+                ">HUSQVARNA FACTORY RACING</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-family: 'Courier New', monospace;
+                    width: 120px;
+                ">03h 21' 41"</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-family: 'Courier New', monospace;
+                    color: #d73a49;
+                    width: 120px;
+                ">+ 00h 02' 57"</td>
+            </tr>
+            
+            <!-- Fila 4 -->
+            <tr style="border-bottom: 1px solid #eaecef;">
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-weight: 600;
+                    color: #24292e;
+                    width: 60px;
+                ">4</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    width: 60px;
+                ">68</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    font-weight: bolder;
+                    width: 220px;
+                ">(esp) TOSHA SCHAREINA</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    width: 240px;
+                ">KTM RACING TEAM</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-family: 'Courier New', monospace;
+                    width: 120px;
+                ">03h 23' 37"</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-family: 'Courier New', monospace;
+                    color: #d73a49;
+                    width: 120px;
+                ">+ 00h 04' 53"</td>
+            </tr>
+            
+            <!-- Fila 5 -->
+            <tr>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-weight: 600;
+                    color: #24292e;
+                    width: 60px;
+                ">5</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    width: 60px;
+                ">17</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    font-weight: bolder;
+                    width: 220px;
+                ">(fra) ROMAIN DUMONTIER</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: left;
+                    width: 240px;
+                ">TEAM DUMONTIER RACING</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-family: 'Courier New', monospace;
+                    width: 120px;
+                ">03h 24' 54"</td>
+                <td style="
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-family: 'Courier New', monospace;
+                    color: #d73a49;
+                    width: 120px;
+                ">+ 00h 06' 10"</td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+<h1 style="text-align: center;">CFGS - Desenvolupament Aplicacions Web</h1>
+
+    <p style="text-align: center; font-size: small;"> Horari del CGFS-DAW</p>
+    <table style="border-collapse: collapse; width: 100%; margin-top: 20px;">
+        <tr style="border-bottom: 1px solid #eaecef;">
+            <th style=" padding: 8px;"></th>
+            <th style=" padding: 8px; text-align: left;">Dilluns</th>
+            <th style=" padding: 8px; text-align: left;">Dimarts</th>
+            <th style=" padding: 8px; text-align: left;">Dimecres</th>
+            <th style=" padding: 8px; text-align: left;">Dijous</th>
+            <th style=" padding: 8px; text-align: left;">Divendres</th>
+        </tr>
+        <tr>
+            <th style="border-bottom: 1px solid #eaecef;padding: 8px; text-align: top;">8:30<br />9:30</th>
+            <td style="border: 1px solid #000000; padding: 8px; vertical-align: top;" rowspan="3">
+                <div style="font-weight: bold; color: #b91c1c;">DAW-04</div>
+                <div>de Mingo</div>
+                <div style="font-style: italic; color: #9ca3af;">or43</div>
+            </td>
+            <td style="border: 1px solid #000000; padding: 8px; vertical-align: top;" rowspan="2">
+                <div style="font-weight: bold; color: #b91c1c;">DAW-10</div>
+                <div>Alonso</div>
+                <div style="font-style: italic; color: #9ca3af;">or43</div>
+            </td>
+        </tr>
+        <tr style>
+            <th style="border-bottom: 1px solid #eaecef; padding: 8px; text-align: top;">9:30<br/>10:30</th>
+            <td style="border-top: 1px solid #000000;padding: 8px; vertical-align: top;">
+                <div style="font-weight: bold; color: #b91c1c;">DAW-11</div>
+                <div>Maria</div>
+                <div style="font-style: italic; color: #9ca3af;">or43</div>
+            </td>
+            <td style="border: 1px solid #000000; padding: 8px; vertical-align: top;" rowspan="2">
+                <div style="font-weight: bold; color: #b91c1c;">DAW-2</div>
+                <div>Montesinos</div>
+                <div style="font-style: italic; color: #9ca3af;">or43</div>
+            </td>
+            <td style="border: 1px solid #000000; padding: 8px; vertical-align: top;" rowspan="2">
+                <div style="font-weight: bold; color: #b91c1c;">DAW-1</div>
+                <div>Verdegal</div>
+                <div style="font-style: italic; color: #9ca3af;">or43</div>
+            </td>
+        </tr>
+        <tr>
+            <th style="border-bottom: 1px solid #eaecef; padding: 8px; text-align: left;">10:30<br />11:30</th>
+            <td style="border: 1px solid #000000; padding: 8px; vertical-align: top;">
+                <div style="font-weight: bold; color: #b91c1c;">DAW-3</div>
+                <div>Bardají</div>
+                <div style="font-style: italic; color: #9ca3af;">or43</div>
+            </td>
+        </tr>
+        <tr>
+            <th style="border-bottom:  1px solid #e5e7eb;padding: 0px; text-align: top;">11:30<br />12:00</th>
+        </tr>
+        <tr>
+            <th style="border-bottom:  1px solid #e5e7eb; padding: 8px; text-align: top;">12:00<br />13:00</th>
+            <td style="border: 1px solid #000000; padding: 8px; vertical-align: top;" rowspan="3">
+                <div style="font-weight: bold; color: #b91c1c;">DAW-3</div>
+                <div>Bardají</div>
+                <div style="font-style: italic; color: #9ca3af;">or43</div>
+            </td>
+            <td style="border: 1px solid #000000; padding: 8px; vertical-align: top;">
+                <div style="font-weight: bold; color: #b91c1c;">DAW-3</div>
+                <div>Bardají</div>
+                <div style="font-style: italic; color: #9ca3af;">or43</div>
+            </td>
+            <td style="border: 1px solid #000000; padding: 8px; vertical-align: top;" rowspan="2">
+                <div style="font-weight: bold; color: #b91c1c;">DAW-3</div>
+                <div>Bardají</div>
+                <div style="font-style: italic; color: #9ca3af;">or43</div>
+            </td>
+            <td style="border: 1px solid #000000; padding: 8px; vertical-align: top;">
+                <div style="font-weight: bold; color: #b91c1c;">DAW-2</div>
+                <div>Montesinos</div>
+                <div style="font-style: italic; color: #9ca3af;">or43</div>
+            </td>
+            <td style="border: 1px solid #000000; padding: 8px; vertical-align: top;" rowspan="2">
+                <div style="font-weight: bold; color: #b91c1c;">DAW-5</div>
+            </td>
+        </tr>
+        <tr>
+            <th style=" padding: 8px; text-align: left;">13:00<br />14:00</th>
+        </tr>
+    </table>
+</body>
+</html>
